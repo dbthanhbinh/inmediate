@@ -24,7 +24,7 @@ function customizer_social( $wp_customize ) {
     );
 
     /* Image Upload */
-    $wp_customize->add_setting( 'img-upload' );
+    $wp_customize->add_setting( 'img-upload-logo' );
     
     $wp_customize->add_control(
         new WP_Customize_Image_Control(
@@ -33,7 +33,7 @@ function customizer_social( $wp_customize ) {
             array(
                 'label' => 'Logo',
                 'section' => 'section_theme_option',
-                'settings' => 'img-upload'
+                'settings' => 'img-upload-logo'
             )
         )
     );
