@@ -23,7 +23,7 @@ add_action('site_head','renderFavicon');
  * @return void
  */
 function renderLogo($logoUrl = '', $alt = '', $show = true){
-    $logo = '<img alt="'.$alt.'" src="' . get_template_directory_uri() . '/images/logo.png" />';
+    $logo = '<img alt="'.$alt.'" src="' . get_template_directory_uri() . '/img/logo.png" />';
     $logo = $logoUrl ? '<img alt="'.$alt.'" src="' . $logoUrl . '" />' : $logo;
     if ($show) {
         echo $logo;

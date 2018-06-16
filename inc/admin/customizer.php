@@ -23,22 +23,6 @@ function customizer_social( $wp_customize ) {
         )
     );
 
-    /* Image Upload */
-    $wp_customize->add_setting( 'img-upload-logo' );
-    
-    $wp_customize->add_control(
-        new WP_Customize_Image_Control(
-            $wp_customize,
-            'img-upload-logo',
-            array(
-                'label' => 'Logo',
-                'section' => 'section_theme_option',
-                'settings' => 'img-upload-logo'
-            )
-        )
-    );
-
-
     // Create setting
     $wp_customize->add_setting (
             'facebook',
