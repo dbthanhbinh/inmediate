@@ -7,6 +7,7 @@ define('THEME_NAME', 'inmediate');
 if(is_admin()) {
     require ('inc/admin/customizer.php');
     require ('inc/admin/filter.php');
+    require ('modules/meta-box/setting.php');
 } else {    
     /**
      * ***************************************************************************
