@@ -1,11 +1,12 @@
 <?php
+define('THEME_NAME', 'inmediate');
 /**
  * * ***************************************************************************
  * Is admin
  */
 if(is_admin()) {
     require ('inc/admin/customizer.php');
-
+    require ('inc/admin/filter.php');
 } else {    
     /**
      * ***************************************************************************
@@ -19,11 +20,11 @@ if(is_admin()) {
     // $logo = $themeMods->getMods('img-upload-logo');
     // renderLogo($logo);
 }
-
+require ('inc/register-posttype.php');
 
 if ( ! function_exists( 'inmediate_setup' ) ) :   
     function inmediate_setup() {     
-        load_theme_textdomain( 'inmediate' );    
+        load_theme_textdomain( THEME_NAME );    
         // Add default posts and comments RSS feed links to head.
         add_theme_support( 'automatic-feed-links' );
     
@@ -54,8 +55,8 @@ if ( ! function_exists( 'inmediate_setup' ) ) :
     
         // This theme uses wp_nav_menu() in two locations.
         register_nav_menus( array(
-            'primary' => __( 'Primary Menu', 'inmediate' ),
-            'social'  => __( 'Social Links Menu', 'inmediate' ),
+            'primary' => __( 'Primary Menu', THEME_NAME ),
+            'social'  => __( 'Social Links Menu', THEME_NAME ),
         ) );
     
         /*
