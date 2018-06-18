@@ -1,5 +1,13 @@
 
 /*Responsive CSS*/
+ul.faq {
+  margin: 0;
+  padding: 0;
+}
+
+ul.faq li{
+  padding-left: 0;
+}
 
 ul, li { list-style: none; }
 .title {
@@ -10,19 +18,29 @@ ul, li { list-style: none; }
   padding-top: 13px;
 }
 
-.faq li { padding: 20px; }
+.faq li { padding: 10px 20px; }
 
-.faq li.q { 
-  font-weight: bold;
-  font-size: 120%;
-  border-bottom: 1px #ddd solid;
+.faq li.q {   
   cursor: pointer;
 }
 
+.faq li.q i{
+  font-size: 120%;
+  margin-right: 10px;
+}
+
+.faq li.q i.fa-plus{
+  color: #F5C284;
+}
+
+.faq li.q i.fa-minus{
+
+}
+
 .faq li.a {
-  background: #3BB0D6;
   display: none;
-  color:#fff;
+  padding-left: 30px;
+  padding-top: 0px;
 }
 
 .rotate {

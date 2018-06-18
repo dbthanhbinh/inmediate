@@ -14,11 +14,11 @@ $(document).ready(function(){
 		.siblings('li.a').slideUp();
 	  
 	  //Grab img from clicked question
-	var img = $(this).children('img');
+	var img = $(this).children('i.fa-item');
 	  //Remove Rotate class from all images except the active
-	  $('img').not(img).removeClass('rotate');
+	  $('i').not(img).removeClass('fa-minus');
 	  //toggle rotate class
-	  img.toggleClass('rotate');
+	  img.toggleClass('fa-minus');
 
 	});//End on click
 

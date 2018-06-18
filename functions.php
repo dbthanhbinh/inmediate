@@ -16,12 +16,14 @@ if(is_admin()) {
     require ('inc/theme-functions.php');
     require ('inc/filter.php');
     require ('inc/theme-render.php');
+    require ('inc/shortcode.php');
 
     // Test show logo
     // $logo = $themeMods->getMods('img-upload-logo');
     // renderLogo($logo);
 }
 require ('inc/register-posttype.php');
+require ('inc/register-taxonomies.php');
 
 if ( ! function_exists( 'inmediate_setup' ) ) :   
     function inmediate_setup() {     
