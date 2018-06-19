@@ -17,13 +17,14 @@ if(is_admin()) {
     require ('inc/filter.php');
     require ('inc/theme-render.php');
     require ('inc/shortcode.php');
-
+    include TEMPLATEPATH . '/modules/gototop/setting.php';
     // Test show logo
     // $logo = $themeMods->getMods('img-upload-logo');
     // renderLogo($logo);
 }
 require ('inc/register-posttype.php');
 require ('inc/register-taxonomies.php');
+// require ('inc/clients.php');
 
 if ( ! function_exists( 'inmediate_setup' ) ) :   
     function inmediate_setup() {     
@@ -96,3 +97,32 @@ if ( ! function_exists( 'inmediate_setup' ) ) :
     }
     endif; // twentysixteen_setup
     add_action( 'after_setup_theme', 'inmediate_setup' );
+
+
+/**
+ * Register widget area.
+ *
+ * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ */
+function inmediate_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Subscribe Footer', 'inmediate' ),
+		'id'            => 'footer-subscribe',
+		'description'   => __( 'Add widgets subscribe.', 'inmediate' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+    ) );
+    
+    register_sidebar( array(
+		'name'          => __( 'Subscribe Header', 'inmediate' ),
+		'id'            => 'header-subscribe',
+		'description'   => __( 'Add widgets subscribe.', 'inmediate' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+// add_action( 'widgets_init', 'inmediate_widgets_init' );

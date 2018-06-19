@@ -1,8 +1,10 @@
 <?php 
 $customMetas = get_post_custom();
+
 $eventStartDate = (isset($customMetas['event-start-date'][0]) && $customMetas['event-start-date'][0]) ? $customMetas['event-start-date'][0] : '';
 $eventLocation = (isset($customMetas['event-location'][0]) && $customMetas['event-location'][0]) ? $customMetas['event-location'][0] : '';
 $eventTime = (isset($customMetas['event-time'][0]) && $customMetas['event-time'][0]) ? $customMetas['event-time'][0] : '';
+$eventLink = (isset($customMetas['event-link'][0]) && $customMetas['event-link'][0]) ? $customMetas['event-link'][0] : '';
 ?>
 <li class="col-6">
     <div class="item">
@@ -11,7 +13,7 @@ $eventTime = (isset($customMetas['event-time'][0]) && $customMetas['event-time']
             <?php 
             if(has_post_thumbnail()) {
                 ?>
-                <a href="<?php the_permalink()?>">
+                <a target="_blank" href="<?= $eventLink ?>">
                 <?php
                 the_post_thumbnail();
                 ?>

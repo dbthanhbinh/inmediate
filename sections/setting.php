@@ -1,10 +1,29 @@
 <?php
-function getQueryArgs($post_type = 'post', $posts_per_page = 6){
+// $tax_query=[
+//     'taxonomy'=> 'group',
+//     'termSlug' => '$termSlug'
+//     ]
+function getQueryArgs($post_type = 'post', $tax_query=[], $posts_per_page = 100){
     // Set up our standard query args.
-    $query_args = array(
-        'post_type'         => $post_type,
-        'posts_per_page'    => $posts_per_page
-    );
+    if (!empty($tax_query)) {
+        $query_args = array(
+            'post_type'         => $post_type,
+            'posts_per_page'    => $posts_per_page,
+            'tax_query'         => array(
+                array(
+                    'taxonomy'  => $tax_query['taxonomy'],
+                    'field'     => 'slug',
+                    'terms'     => array( $tax_query['termSlug'] ),
+                    'operator'  => 'IN'
+                )
+            )
+        );
+    } else {
+        $query_args = array(
+            'post_type'         => $post_type,
+            'posts_per_page'    => $posts_per_page
+        );
+    }
 
     return $q = new WP_Query( $query_args );
 }

@@ -1,8 +1,8 @@
 <?php
 $rg_posttypes = array(
 	array('posttype' => 'event','taxonomy' => array(),'postname'=> "Event",'support' => array('title','excerpt','editor', 'thumbnail')),
-	array('posttype' => 'team','taxonomy' => array(),'postname'=> "Core Team",'support' => array('title','excerpt', 'thumbnail')),
-	// array('posttype' => 'featured','taxonomy' => array(),'postname'=> "As Featured",'support' => array('title', 'thumbnail')),
+	array('posttype' => 'ct_team_person','taxonomy' => array(),'postname'=> "Core Team",'support' => array('title','excerpt', 'editor', 'thumbnail')),
+	//array('posttype' => 'ct_client','taxonomy' => array('ct_clients_sets'),'postname'=> "Client",'support' => array('title', 'thumbnail')),
 	// array('posttype' => 'partner','taxonomy' => array(),'postname'=> "Partners",'support' => array('title', 'thumbnail')),
 	array('posttype' => 'faq','taxonomy' => array('group'),'postname'=> "FAQ",'support' => array('title','excerpt','editor', 'thumbnail')),
 	// array('posttype' => '','taxonomy' => array(),'postname'=> "",'support' => array('title','excerpt','editor','thumbnail'))

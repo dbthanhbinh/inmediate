@@ -1,15 +1,17 @@
 <?php get_header(); ?>
-
-<section class="benefits">
+<section class="page-detail">
 	<div class="container">
-		<header>
-			<h3 class="subTitle"><?= the_title( )?></h3>
+		<header class="text-center">
+			<h1 class="subTitle"><?= the_title( )?></h1>
 		</header>
 		<div class="box-content">			
 			<?php 
-			if (is_page( 'faq' )) {
-				get_template_part( 'template-parts/faq/content', 'faq' );
-			}
+				the_post();
+				if(is_page('faqs')) {
+					get_template_part( 'template-parts/faq/content', 'faq' );
+				} else {
+					the_content();
+				}
 			?>
 		</div>
 	</div>

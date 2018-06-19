@@ -78,6 +78,24 @@ $meta_boxes[] = array(
 	)
 );
 
+// // For as feature, partner
+// $meta_boxes[] = array(
+// 	'id'    => 'additional_ct_client',
+// 	'title' => 'Client setting',
+// 	'pages' => array( 'ct_client'),
+
+// 	'fields' => array(
+// 		// TEXT
+// 		array(
+// 			'name' => 'Link references',
+// 			'id' => $prefix . 'link',
+// 			'desc' => 'Link references',
+// 			'type'  => 'text',
+// 			'std' => 'http://',
+// 		),		
+// 	)
+// );
+
 
 /********************* META BOX REGISTERING ***********************/
 

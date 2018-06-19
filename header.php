@@ -9,23 +9,35 @@
 	<?php endif; ?>
 		
 	<!-- faq -->
-	<?php if(is_page( 'faq' )): ?>
+	<?php if(is_page( 'faqs' )): ?>
 	<link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/faq.css" type="text/css" media="all">
 	<?php endif ?>
 
 	<?php wp_head(); ?>
 	<link type="text/css" rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/styles.css">
+    <link type="text/css" rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/animate.css">
+    <link type="text/css" rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/style.min.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118637328-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-118637328-1');
+	</script>
 </head>
-<body>
+<body <?php body_class(); ?>>
 	<div class="main-page">	
-        <header class="page-header">
-            <div class="site-header">
+        <header>
+            <div class="site-header" id="top-navigation">
                 <div class="container">
                     <div class="row">
                         <div class="logo col-lg-3 col-9">
+                            <a href="<?= site_url() ?>">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/logos/logo_reverse.png" alt="Logo" />
+                            </a>
                         </div>
                         <nav class="navbar navbar-expand-lg navbar-light page-menu col-lg-9 col-3">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -33,30 +45,36 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <?php
+                                $siteUrl = false; 
+                                if(is_home() || is_front_page()) {
+                                    $siteUrl = true;
+                                }
+                                ?>
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="#">About</a>
+                                        <a class="nav-link" href="<?= $siteUrl ? '' : site_url()?>#about-us">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Team</a>
+                                        <a class="nav-link" href="<?= $siteUrl ? '' : site_url()?>#teams">Team</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Token</a>
+                                        <a class="nav-link" href="<?= $siteUrl ? '' : site_url()?>#token">Token</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Roadmap</a>
+                                        <a class="nav-link" href="<?= $siteUrl ? '' : site_url()?>#road-map">Roadmap</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">News</a>
+                                        <a class="nav-link" href="<?= $siteUrl ? '' : site_url()?>#news">News</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Events</a>
+                                        <a class="nav-link" href="<?= $siteUrl ? '' : site_url()?>#events">Events</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Faq</a>
+                                        <a class="nav-link" href="<?= site_url()?>/faqs">Faq</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link whitePaper" href="#">White paper</a>
+                                        <a class="nav-link whitePaper" href="<?= site_url()?>/download-attachment/4038">White paper</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link lang" href="#">En</a>
@@ -66,33 +84,28 @@
                         </nav>
                     </div>
                 </div>
-            </div>
-            <?php if(is_home() || is_front_page()):?>
+            </div>            
+        </header>
+        <?php if(is_home() || is_front_page()):?>
+        <div class="page-header">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-12 headerText">
-                        <h1>The Smart Insurance Platform</h1>
-                        <p>Making policies transparent and trustworth, by powering
-                            <br>Smart Contract Insurance</p>
-                        <div class="groupsIcon text">
-                            <span class="icon icon01">Ecosytem concept pater</span>
-                            <span class="icon icon02">Join us on telegram</span>
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button">SUBSCRIBE</button>
-                            </div>
-                        </div>
-                        <div class="groupsIcon">
-                            <span class="icon icon03"></span>
-                            <span class="icon icon04"></span>
-                            <span class="icon icon05"></span>
-                            <span class="icon icon06"></span>
-                            <span class="icon icon07"></span>
-                        </div>
+                <div class="col-12 headerText animate fadeInLeft">
+                    <h1>The Smart Insurance Platform</h1>
+                    <p>Making policies transparent and trustworth, by powering
+                    <br>Smart Contract Insurance</p>
+                    <div class="groupsIcon text">
+                        <a href="<?= site_url()?>/download-attachment/4039"><span class="icon icon01">Ecosytem concept pater</span></a>
+                        <a href="https://t.me/inmediate" target="_blank"><span class="icon icon02">Join us on telegram</span></a>
                     </div>
+                    <?php 
+                        get_template_part( 'template-parts/subscribe/content', 'sub' );
+                    ?>
+                    <?php 
+                    get_template_part( 'template-parts/social/content', 'icons' );
+                    ?>
+                </div>
                 </div>
             </div>
-            <?php endif ?>
-        </header>
+            </div>
+        <?php endif ?>

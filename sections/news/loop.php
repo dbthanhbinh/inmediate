@@ -11,6 +11,5 @@
         }
     ?>
     <span><?php the_date() ?></span>
-    <h4><a href="<?php the_permalink()?>"><?php the_title()?></a></h4>
-    <p><?php the_excerpt()?></p>
+    <h5 class="home-news-title"><a href="<?php the_permalink()?>"><?php the_title()?></a></h5>
 </div>

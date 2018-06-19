@@ -134,6 +134,23 @@ a.underline {
     background: #f0f1f3; }
     .box.events header p {
       color: #323232; }
+  .box.featured {
+    background: #f0f1f3; }
+    .box.featured .carousel-indicators {
+      bottom: -70px; }
+      .box.featured .carousel-indicators li {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #F5C284;
+        margin: 0 30px; }
+        .box.featured .carousel-indicators li.active {
+          background: #822f66; }
+  .box.about-us .tab-content {
+    padding-top: 50px; }
+  .box.about-us iframe {
+    width: 100%;
+    height: 270px; }
 
 .input-group {
   max-width: 450px;
@@ -156,6 +173,31 @@ a.underline {
   margin: 20px 0; }
   .groupsIcon.text {
     margin: 40px 0; }
+
+.tabItems {
+  padding: 20px 10px 0; }
+  .tabItems .item {
+    text-align: left;
+    color: #323232; }
+    .tabItems .item h3 {
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 10px 0; }
+    .tabItems .item p {
+      margin: 0; }
+
+.about-us .nav-tabs {
+  border: 0; }
+  .about-us .nav-tabs .nav-link {
+    border: solid 1px #F5C284;
+    border-radius: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #F5C284; }
+    .about-us .nav-tabs .nav-link.active {
+      background: #822f66;
+      border: solid 1px #822f66; }
 
 .icon {
   position: relative;
@@ -262,7 +304,10 @@ a.underline {
         font-size: 18px;
         color: #323232;
         text-align: center;
-        font-weight: bold; }
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
       .events .listItem .item .content {
         padding-left: 110px;
         position: relative; }
@@ -276,6 +321,18 @@ a.underline {
           margin-bottom: 5px; }
           .events .listItem .item .content p span {
             font-weight: bold; }
+
+.listImage {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .listImage .item {
+    width: 20%;
+    float: left;
+    padding: 10px 25px; }
+    .listImage .item img {
+      width: 100%;
+      height: auto; }
 
 .steps {
   margin: 0;

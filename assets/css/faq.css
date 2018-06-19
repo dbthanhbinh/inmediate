@@ -30,17 +30,18 @@ ul, li { list-style: none; }
 }
 
 .faq li.q i.fa-plus{
-  color: #F5C284;
+  color: #f5c284;
 }
 
 .faq li.q i.fa-minus{
-
+  color: #822f66;
 }
 
 .faq li.a {
   display: none;
   padding-left: 30px;
   padding-top: 0px;
+  color: #822f66;
 }
 
 .rotate {
