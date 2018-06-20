@@ -8,7 +8,7 @@
     <div class="box-content">
     <ul class="row listItem align-items-center">
         <?php   
-            $q = getQueryArgs('event', [], 4);
+            $q = getQueryArgs('event', [], 3);
             if ( $q->have_posts() ) {
                 while ( $q->have_posts() ) : $q->the_post();
                 require ('loop.php');

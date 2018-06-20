@@ -10,7 +10,7 @@
             <ul class="list-style">
               <li>Onboard 3 Major Insurance Partners</li>
               <li>3 Proof of Concept Products (POC) ready</li>
-              <li>Ecosystem design and specifications</li>
+              <li class="last-child">Ecosystem design and specifications</li>
             </ul>
           </li>
           <li class="item item-2 col-3">
@@ -20,7 +20,7 @@
               <li>Token migration from Ethereum to Zilliqa blockchain</li>
               <li>3 POC underwriting and pricing guidelines</li>
               <li>Prototype dApp on Zilliqa</li>
-              <li>First Smart Contract Insurance Product</li>
+              <li class="last-child">First Smart Contract Insurance Product</li>
             </ul>
           </li>
           <li class="item item-3 col-3">
@@ -31,7 +31,7 @@
               <li>Eco-system integration and testing</li>
               <li>Marketing of initial products for public awareness</li>
               <li>Customer loyalty program</li>
-              <li>Onboard more distributors</li>
+              <li class="last-child">Onboard more distributors</li>
             </ul>
           </li>
           <li class="item item-4 col-3">
@@ -42,7 +42,7 @@
               <li>Soft launch first prototype product</li>
               <li>2nd and 3rd Prototype Smart Insurance product ready</li>
               <li>Complete distribution platform coding and connectivity</li>
-              <li>White Paper on Insurance Oracles</li>
+              <li class="last-child">White Paper on Insurance Oracles</li>
             </ul>
           </li>
         </ul>

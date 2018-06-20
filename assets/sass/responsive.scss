@@ -1,0 +1,107 @@
+
+@media (max-width: 991px) {
+
+    .site-header.mini a{
+        line-height: 25px;
+    }
+
+    .navbar-nav {
+        background: #ffffff;
+        position: absolute;
+        .nav-item {
+            a {
+                line-height: 25px;
+                color: #232323;
+            }
+        }
+    }
+
+    .box {
+        padding: 100px 20px;
+        header {
+            padding-bottom: 20px;
+            h2 {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .page-header {
+        .logo {
+            img {
+                max-width: 200px;
+                margin-top: 5px;
+            }
+        }
+
+        .headerText {
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    
+        .page-menu {
+            .navbar-nav {
+                .nav-link {
+                    &.whitePaper {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+    
+    .groupsIcon {
+        line-height: 50px;
+        margin: 10px 0;
+
+        .icon {
+            padding: 10px 20px;
+        }
+
+        &.text {
+            margin: 20px 0;
+        }
+    }
+
+    .input-group {
+        input {
+            padding-left: 10px;
+            font-size: 14px;
+        }
+        button {
+            font-size: 16px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .box {
+        padding: 50px 10px;
+        header {
+            padding-bottom: 20px;
+            h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .teams .listItem {
+        .col-4{
+            width: 50%;
+        }
+    }
+}

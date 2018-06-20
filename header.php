@@ -19,14 +19,14 @@
     <link type="text/css" rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/animate.css">
     <link type="text/css" rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/style.min.css">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118637328-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118637328-1"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 
 	  gtag('config', 'UA-118637328-1');
-	</script>
+	</script> -->
 </head>
 <body <?php body_class(); ?>>
 	<div class="main-page">	
@@ -35,9 +35,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="logo col-lg-3 col-9">
-                            <a href="<?= site_url() ?>">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/logos/logo_reverse.png" alt="Logo" />
-                            </a>
+                            <a href="<?= site_url() ?>" class="logo-site">Logo</a>
                         </div>
                         <nav class="navbar navbar-expand-lg navbar-light page-menu col-lg-9 col-3">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -74,7 +72,7 @@
                                         <a class="nav-link" href="<?= site_url()?>/faqs">Faq</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link whitePaper" href="<?= site_url()?>/download-attachment/4038">White paper</a>
+                                        <a class="nav-link whitePaper" href="https://inmediate.io/Inmediate_Whitepaper.pdf">White paper</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link lang" href="#">En</a>
@@ -95,11 +93,11 @@
                     <p>Making policies transparent and trustworth, by powering
                     <br>Smart Contract Insurance</p>
                     <div class="groupsIcon text">
-                        <a href="<?= site_url()?>/download-attachment/4039"><span class="icon icon01">Ecosytem concept pater</span></a>
-                        <a href="https://t.me/inmediate" target="_blank"><span class="icon icon02">Join us on telegram</span></a>
+                        <a target="_blank" href="https://inmediate.io/Eco_System_Concept_Paper.pdf"><span class="icon icon01">Ecosytem concept paper</span></a>
+                        <a target="_blank" href="https://t.me/inmediate"><span class="icon icon02">Join us on telegram</span></a>
                     </div>
                     <?php 
-                        get_template_part( 'template-parts/subscribe/content', 'sub' );
+                        // get_template_part( 'template-parts/subscribe/content', 'sub' );
                     ?>
                     <?php 
                     get_template_part( 'template-parts/social/content', 'icons' );

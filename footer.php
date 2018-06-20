@@ -16,7 +16,7 @@
 
                 </div>
                 <?php 
-                    get_template_part( 'template-parts/subscribe/content', 'sub' );
+                    // get_template_part( 'template-parts/subscribe/content', 'sub' );
                 ?>
                 <dl>
                     <dt>Address:</dt>
@@ -26,27 +26,29 @@
                 </dl>
                 <div class="row justify-content-between">
                     <div class="col-lg-5">
-                        <a class="underline" href="https://t.me/inmediate">View inmediate.io</a>
+                        <a class="underline" target="_blank" href="https://t.me/inmediate">View inmediate.io</a>
                     </div>
                     <div class="col-lg-5">
-                        <a class="underline" href="<?= site_url()?>/newsletter">View our newsletters</a>
+                        <a class="underline" target="_blank" href="<?= site_url()?>/newsletter">View our newsletters</a>
                     </div>
                 </div>
             </div>
             <div class="footer">
-                <div class="row justify-content-between">
-                    <div class="col-lg-5 col-12">
-                        <div class="groupsIcon">
-                            <a href="<?= site_url()?>/download-attachment/4040">
-                                <span class="icon icon01">Terms and Conditions</span>
-                            </a>
-                            <a href="<?= site_url()?>/download-attachment/4041">
-                                <span class="icon icon01">Privacy Policy</span>
-                            </a>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-5 col-12">
+                            <div class="groupsIcon">
+                                <a target="_blank" href="https://inmediate.io/Terms_and_Conditions.pdf">
+                                    <span class="icon icon01">Terms and Conditions</span>
+                                </a>
+                                <a target="_blank" href="https://inmediate.io/Inmediate_Privacy_Policy.pdf">
+                                    <span class="icon icon01">Privacy Policy</span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-5 col-12">
-                        <p>Copyright @ Inmediate 2018. All rights reserved.</p>
+                        <div class="col-lg-5 col-12">
+                            <p>Copyright @ Inmediate 2018. All rights reserved.</p>
+                        </div>
                     </div>
                 </div>
             </div>
