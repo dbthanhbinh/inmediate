@@ -9,7 +9,10 @@
 				the_post();
 				if(is_page('faqs')) {
 					get_template_part( 'template-parts/faq/content', 'faq' );
-				} else {
+				} else if(is_page( 'newsletters' )) {
+					get_template_part( 'template-parts/newsletter/content', 'news' );
+				} 				
+				else {
 					the_content();
 				}
 			?>
