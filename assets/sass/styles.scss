@@ -75,8 +75,6 @@ a:hover{
             display: block;
             width: 150px;
             height: 37px;
-
-            background-image: url('../images/logos/logo.png');
             background-repeat: no-repeat;
             background-size: cover;
             text-indent: 9999px;
@@ -119,7 +117,7 @@ a:hover{
         
         .logo {
             .logo-site {
-                background-image: url('../images/logos/logo_mini.png');
+                // background-image: url('../images/logos/logo_mini.png');
             }
         }
 
@@ -138,6 +136,15 @@ a:hover{
     .navbar {
         padding: 0;
     }
+}
+
+.home .site-header .logo .logo-site{
+    background-image: url('../images/logos/logo.png');
+}
+
+.site-header .logo .logo-site,
+.home .site-header.mini .logo .logo-site{
+    background-image: url('../images/logos/logo_mini.png');
 }
 
 .page-header {
@@ -170,7 +177,7 @@ a:hover{
 }
 
 .box {
-    padding: 100px 185px 120px;
+    padding: 100px 20px 120px;
     text-align: center;
     min-height: 400px;
     color: #fff;
@@ -192,7 +199,7 @@ a:hover{
         }
     }
     &.page-footer {
-        background-image: linear-gradient(219deg, #2d2239 0%, #1d3654 100%);
+        background-image: linear-gradient(45deg, #123651 0%, #4b375c 100%);
         position: relative;
         .footer {
             position: absolute;
@@ -216,7 +223,6 @@ a:hover{
     }
     dl {
         dt {
-            font-weight: 600;
             color: #F5C284;
         }
         dd {
@@ -234,7 +240,7 @@ a:hover{
         background-image: linear-gradient(219deg, #061d2d 0%, #123651 100%);
     }
     &.token {
-        background-image: linear-gradient(219deg, #812f67 0%, #48365b 100%);
+        background-image: linear-gradient(45deg, #123651 0%, #822F66 100%);
         .sub {
             text-transform: uppercase;
             position: relative;
@@ -315,8 +321,7 @@ a:hover{
 }
 
 .tabItems {
-    padding: 0 10px 0px 10px 0;
-
+    
     .item {
         text-align: left;
         color: #323232;
@@ -325,7 +330,7 @@ a:hover{
             font-size: 20px;
             font-weight: bold;
             text-transform: uppercase;
-            margin: 10px 0;            
+            margin: 30px 0 10px 0;           
         }
 
         p {
@@ -544,20 +549,9 @@ a:hover{
                 width: 100%;
                 height: auto;
                 border: 1px solid transparent;
-               
-                -webkit-filter: grayscale(100%);
-                filter: grayscale(100%);
-                -webkit-transition: 0.3s linear;
-                transition: 0.3s linear;
-
                 &:hover{
                     border-color: #812f67;
                     opacity: 0.9;
-                    
-                    -webkit-filter: none;
-                    filter: none;
-                    -webkit-transition: initial;
-                    transition: initial;
                 }
             }
         }
@@ -590,20 +584,10 @@ a:hover{
                     position: absolute;
                     left: 0;
                     margin: 0;
-                    border: 1px solid transparent;                   
-                    -webkit-filter: grayscale(100%);
-                    filter: grayscale(100%);
-                    -webkit-transition: 0.3s linear;
-                    transition: 0.3s linear;
-
+                    border: 1px solid transparent;
                     &:hover{
-                        border-color: #812f67;
+                        // border-color: #812f67;
                         opacity: 0.9;
-                        
-                        -webkit-filter: none;
-                        filter: none;
-                        -webkit-transition: initial;
-                        transition: initial;
                     }
 
                 }
@@ -889,7 +873,7 @@ a:hover{
 }
 
 .page-detail{
-    padding: 30px 0;
+    padding: 30px 0;    
 }
 
 .post-template-default,
@@ -948,24 +932,23 @@ h1.subTitle{
     top:7px;
     color:#fff;
 }
-.core-team-item-div{
-    position: absolute;
-    width: 100%;
-    height: auto;
+.core-team-item-div{   
     padding: 10px;
     margin-top: -20px;
     left: 0;
     border: 2px solid #822f66;
     z-index: 2;
     background: #fff;
-    display: none;
     color: #232323;
+    text-align: left;
 }
 
 .strict-direction{
     color: #822f66;
     font-size: 35px;
     display: none;
+    position: relative;
+    bottom: -20px;
 }
 
 .open .core-team-item-div,
@@ -976,6 +959,19 @@ h1.subTitle{
 .teams .listItem .item.open .tit{
     color: #822f66;
     font-weight: bold;
+}
+
+.box-content-detail{
+    color: #232323;
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.box.page-footer{
+    dl dd{
+        font-weight: normal;
+    }
 }
 
 @import "responsive";

@@ -90,14 +90,14 @@
                 <div class="row align-items-center">
                 <div class="col-12 headerText animate fadeInLeft">
                     <h1>The Smart Insurance Platform</h1>
-                    <p>Making policies transparent and trustworth, by powering
+                    <p>Making policies transparent and trustworthy, by powering
                     <br>Smart Contract Insurance</p>
                     <div class="groupsIcon text">
                         <a target="_blank" href="https://inmediate.io/Eco_System_Concept_Paper.pdf"><span class="icon icon01">Ecosytem concept paper</span></a>
                         <a target="_blank" href="https://t.me/inmediate"><span class="icon icon02">Join us on telegram</span></a>
                     </div>
                     <?php 
-                        // get_template_part( 'template-parts/subscribe/content', 'sub' );
+                        get_template_part( 'template-parts/subscribe/content', 'sub' );
                     ?>
                     <?php 
                     get_template_part( 'template-parts/social/content', 'icons' );

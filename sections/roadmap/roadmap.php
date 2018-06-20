@@ -1,4 +1,5 @@
 <section class="box road-map" id="road-map">
+  <div class="container">
       <header>
         <h2>An Exciting Road Map</h2>
       </header>
@@ -47,4 +48,5 @@
           </li>
         </ul>
       </div>
-    </section>
+  </div>
+</section>

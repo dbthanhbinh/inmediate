@@ -32,30 +32,14 @@ $meta_boxes[] = array(
 	'title' => 'Infomation',
 	'pages' => array( 'event'),
 
-	'fields' => array(        		
-        // DATE
-		array(
-			'name' => 'Day of',
-			'id'   => "{$prefix}date",
-			'desc' => 'Day of event',
-			'type' => 'date',
-			'format' => 'd MM, yy',
-		),
-		// TIME
-		array(
-			'name' => 'Time of',
-			'id'   => "{$prefix}time",
-			'desc' => 'Time of event',
-			'type' => 'time',
-			'format' => 'hh:mm:ss',
-		),
+	'fields' => array(  
 		// TEXT
 		array(
-			'name' => 'Location',
-			'id' => $prefix . 'location',
-			'desc' => 'Location of event',
+			'name' => 'Order',
+			'id' => $prefix . 'menu_order',
+			'desc' => 'Order of event',
 			'type'  => 'text',
-			'std' => '',
+			'std' => 0,
 		),		
 	)
 );

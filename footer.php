@@ -11,7 +11,7 @@
                         <button class="btn btn-outline-secondary" type="button">SUBSCRIBE</button>
                     </div> -->
                     <?php 
-                    get_template_part( 'template-parts/faq/content', 'faq' );
+                    get_template_part( 'template-parts/subscribe/content', 'sub' );
                     ?>
 
                 </div>
@@ -24,11 +24,11 @@
                     <dt>Email:</dt>
                     <dd>contact@inmediate.io</dd>
                 </dl>
-                <div class="row justify-content-between">
-                    <div class="col-lg-5">
-                        <a class="underline" target="_blank" href="https://t.me/inmediate">View inmediate.io</a>
+                <div class="row justify-content-md-center">
+                    <div class="col col-lg-3">
+                        <a class="underline" target="_blank" href="https://t.me/inmediate">View inmediate.co</a>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col col-lg-3">
                         <a class="underline" target="_blank" href="<?= site_url()?>/newsletter">View our newsletters</a>
                     </div>
                 </div>

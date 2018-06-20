@@ -4,7 +4,7 @@
 		<header class="text-center">
 			<h1 class="subTitle"><?= the_title( )?></h1>
 		</header>
-		<div class="box-content">			
+		<div class="box box-content-detail">			
 			<?php 
 				the_post();
 				if(is_page('faqs')) {

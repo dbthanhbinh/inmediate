@@ -1,4 +1,5 @@
 <section class="box token" id="token">
+  <div class="container">
       <header>
         <h2>Token Allocation</h2>
         <p>Inmediate will be launching a Token Generation Event (TGE) to power the services and transactions within the ecosystem.
@@ -42,4 +43,5 @@
           </div>
         </div>
       </div>
-    </section>
+  </div>
+</section>

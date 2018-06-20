@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    // alert($('.site-header').offset().top);
+    if($('.site-header').offset().top>=80) {
+        $('.site-header').addClass('mini');
+    } else {
+        $('.site-header').removeClass('mini');
+    }
+
     $(document).on('scroll', function (e) {
         const top = $(this).scrollTop();
         if (top >= 100) {
@@ -12,14 +19,49 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top }, 1000);
     })
 
-    $('.bordered-box').on('click', function(){
-        $('.bordered-box').parent().removeClass('open')
+	$('.bordered-box').on('click', function(){
+		var thisRef = $(this).parent().attr('data-ref');
+		$('.bordered-box').parent().removeClass('open')
         $('.bordered-box').removeClass('active')
-
-        $(this).parent().addClass('open');
-        $(this).addClass('active');
-    });
-
+		
+		var thatRef = '';		
+		var thisHtml = $(this).parent().find('#data-ref-' + thisRef).html();
+		if($("div").hasClass( "core-team-item-div" )){
+			thatRef = $('#core-team-item-div').attr('data-ref');
+		}
+		if(thisRef == thatRef) {			
+			$('.core-team-item-div').remove();
+		} else {
+			$(this).parent().addClass('open');
+			$(this).addClass('active');	
+			
+			$('.core-team-item-div').remove();
+			var $parentT = $(this).parents('.listItem');
+			$( "<div id='core-team-item-div' data-ref='"+thisRef+"' class='core-team-item-div'>" + thisHtml + "</div>" ).insertAfter($parentT);
+		}
+	});
+	
+	
+	/*
+	$('#teams .listItem .item').on('click', function(){
+		var thisRef = $(this).attr('data-ref');
+		var thatRef = '';		
+		var thisHtml = $(this).find('#data-ref-' + thisRef).html();
+		if($("div").hasClass( "core-team-item-div" )){
+			thatRef = $('#core-team-item-div').attr('data-ref');
+		}
+		if(thisRef == thatRef) {
+			console.log('====');
+			$('.core-team-item-div').remove();
+		} else {
+			console.log('=!!=');
+			$('.core-team-item-div').remove();
+			$( "<div id='core-team-item-div' data-ref='"+thisRef+"' class='core-team-item-div'>" + thisHtml + "</div>" ).insertAfter($(this).parent());	
+		}
+	});
+	*/
+	
+	
     // $("nav-item").click(function(){
     //     var $place = $(this).attr("href");
     //     $(window).animate(

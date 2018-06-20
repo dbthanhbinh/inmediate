@@ -1,3 +1,35 @@
+footer .input-group{
+    max-width: 370px;
+}
+@media (max-width: 991px) {
+    .site-header .page-menu .navbar-nav .nav-link{
+        padding: 5px 10px;
+    }
+
+    .steps .item {
+        width: 33.3333333%;
+    }
+
+    .road-map .steps .item{}
+
+    .about-us .nav-tabs .nav-item {
+        /* margin-bottom: -1px; */
+        flex: 0 0 32%;
+        max-width: 32%;
+    }
+
+    .events .listItem .item{
+        min-height: 248px;
+    }
+
+    .justify-content-md-center{
+        padding-bottom: 40px;
+    }
+
+    .site-header .page-menu .navbar-nav .nav-link{
+        color: #232323;
+    }
+}
 
 @media (max-width: 991px) {
 
@@ -103,5 +135,100 @@
         .col-4{
             width: 50%;
         }
+    }
+
+    .about-us .nav-tabs .nav-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 5px 0;
+    }
+
+    .teams .listItem .col-4 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .road-map .steps .item{
+        width: 50%;
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .events .listItem li{
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        height: auto;
+        .item{
+            min-height: auto;
+        }
+    }
+
+    .news .listItem .item{
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .justify-content-md-center {
+        flex-wrap: unset;
+    }
+
+    .box.page-footer{
+        padding: 50px 10px 100px;
+    }
+}
+
+@media (max-width: 575px) {
+    .featured .listImage .item{
+        width: 50%;
+    }
+
+    .box.featured .carousel-indicators, .box.partners .carousel-indicators {
+        bottom: -50px;
+    }
+    
+    .box.featured .carousel-indicators li, .box.partners .carousel-indicators li{
+        margin: 5px;
+    }
+
+    .groupsIcon.text a{
+        display: inline-block;
+        span{
+            padding-left: 30px;
+        }
+    }
+
+    .tab-content>.tab-pane .col-4,
+    .tab-content>.tab-pane .col-6{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .steps .item{
+        width: 100%;
+    }
+
+    .listItem .item{
+        width: 50%;
+    }
+
+    .carousel .listImage .item.col-3 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .token .box-content .col-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
     }
 }
