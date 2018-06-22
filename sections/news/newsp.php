@@ -1,10 +1,6 @@
 <!-- news section -->
-<section class="box news" id="news">
-    <div class="container">
-        <header>
-            <h2 class="tim">News</h2>
-        </header>
-        <div class="box-content">
+<section class="news" id="news">
+    <div class="box-content">
         <!-- <div class="row listItem">
             <?php 
                 // $q = getQueryArgs();
@@ -15,7 +11,6 @@
                 // } // end have_posts()
             ?>     
         </div> -->
-            <?php require ('show-loop.php'); ?>
-        </div>
+        <?php require ('show-loopp.php'); ?>
     </div>
 </section>

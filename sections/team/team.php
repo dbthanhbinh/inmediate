@@ -16,11 +16,11 @@
 							echo '<ul class="row listItem">';
 							$dfOpen = 'open';
 							$dfActive = 'active';
-						} else {
-							$dfOpen = '';
-							$dfActive = '';
 							$dfId = get_the_ID();
 							$dfContent = get_the_content();
+						} else {
+							$dfOpen = '';
+							$dfActive = '';							
 						}
 						require ('loop.php');
 						

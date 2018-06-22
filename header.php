@@ -4,6 +4,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="icon" type="image/png" href="<?= get_template_directory_uri() ?>/favicon.png" />
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
@@ -72,7 +73,7 @@
                                         <a class="nav-link" href="<?= site_url()?>/faqs">Faq</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link whitePaper" href="https://inmediate.io/Inmediate_Whitepaper.pdf">White paper</a>
+                                        <a class="nav-link whitePaper" href="https://inmediate.io/Inmediate_Whitepaper_V1.2.pdf">White paper</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link lang" href="#">En</a>

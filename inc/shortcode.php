@@ -15,7 +15,7 @@ function barfaq_func( $atts ) {
                 // Set up our standard query args.
                 $query_args = array(
                     'post_type'         => 'faq',      
-                    'posts_per_page'    => 2,
+                    'posts_per_page'    => 30,
                     'tax_query'         => array(
                         array(
                             'taxonomy'  => 'group',

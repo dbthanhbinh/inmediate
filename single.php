@@ -2,12 +2,11 @@
 <section class="page-detail">
 	<div class="container">
 		<header class="text-center">
-			<h1 class="subTitle"><?= the_title( )?></h1>
+			<h1 class="subTitle tim"><?= the_title( )?></h1>
 		</header>
-		<div class"single-box">
+		<div class="single-box">
 			<h5 class="text-center">
-				<span>Singapore | <?= the_date()?> </span>
-
+				<span>Singapore | <?= the_date()?> | PRNewswire</span>
 			</h5>
 			<?php 
 				get_template_part( 'template-parts/social/content', 'icons_s' );

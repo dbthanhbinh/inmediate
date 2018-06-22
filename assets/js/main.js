@@ -35,11 +35,38 @@ $(document).ready(function(){
 			$(this).parent().addClass('open');
 			$(this).addClass('active');	
 			
-			$('.core-team-item-div').remove();
-			var $parentT = $(this).parents('.listItem');
+            $('.core-team-item-div').remove();
+            
+            var width = $( window ).width();
+            var height = $( window ).height();
+            if(width <= 767){
+                var $parentT = $(this).parent();
+            } else {
+                var $parentT = $(this).parents('.listItem');
+            }
+			
 			$( "<div id='core-team-item-div' data-ref='"+thisRef+"' class='core-team-item-div'>" + thisHtml + "</div>" ).insertAfter($parentT);
 		}
-	});
+    });
+    
+
+//     function responsiveFn() {
+//         width = $( window ).width();
+//         height = $( window ).height();
+          
+//      // Executing Both width() and height()   
+//      document.getElementById('widthID').innerHTML=width; 
+//      document.getElementById('heightID').innerHTML=height; 
+    
+//      // Do a custom code here
+//        if(width <= 767){
+
+     
+//        }
+//     }
+    
+//      // load() event and resize() event are combined 
+//    $(window).ready(responsiveFn).resize(responsiveFn); 
 	
 	
 	/*

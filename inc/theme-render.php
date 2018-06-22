@@ -8,9 +8,11 @@
 function renderFavicon($favicon = '')
 { 
     if(!$favicon)
-        echo '<link rel="icon" type="image/png" href="'.$favicon.'" />';
-    else
-        echo '<link REL="SHORTCUT ICON" HREF="'.get_template_directory_uri().'/favicon.ico">';
+        return '<link rel="icon" type="image/png" href="'.$favicon.'" />';
+    else{
+        // echo '<link REL="SHORTCUT ICON" HREF="'.get_template_directory_uri().'/favicon.ico">';
+        return '<link rel="icon" type="image/png" href="'.get_template_directory_uri().'/favicon.png" />';
+    }
 }
 add_action('site_head','renderFavicon');
 

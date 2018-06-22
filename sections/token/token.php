@@ -17,28 +17,28 @@
           <div class="col-6">
             <ul class="list-style">
               <li class="item-1">
-                <h4>400,000,000 DIT</h4>
+                <h4>400,000.000 DIT</h4>
                 <p>40% for the Token Generation Event</p>
               </li>
               <li class="item-2">
                 <h4>150,000,000 DIT</h4>
-                <p>15% for the Team The total vesting period will be 30 months, with 20% vested after the first 6 months, and
-                  10% vested thereafter every quarter.
+                <p>15% of the tokens is reserved for the Inmediate team with vesting of 20% after a 6 months cliff. Thereafter 20% per quarter will vest for advisors and 10% per quarter for management and staff.
                 </p>
               </li>
               <li class="item-3">
-                <h4>25,000,000 DIT</h4>
-                <p>2.5% for DIT Community Contributors</p>
+                <h4>5,000,000 DIT </h4>
+                <p>5% for Pre- and post- token sale bounty
+                </p>
               </li>
               <li class="item-4">
-                <h4>225,000,000 DIT</h4>
-                <p>22.5% for Strategic Partners</p>
+                <h4>150,000,000 DIT </h4>
+                <p>22.5% for Strategic Partners.
+                </p>
               </li>
               <li class="item-5">
-                <h4>200,000,000 DIT</h4>
-                <p>20% held in Reserve</p>
-                <p>This serves as a liquidity pool to manage token volatility</p>
-              </li>
+                <h4>250,000,000 DIT</h4>
+                <p>20% held in Reserve. This serves as a liquidity pool to manage token volatility</p>
+              </li>              
             </ul>
           </div>
         </div>
